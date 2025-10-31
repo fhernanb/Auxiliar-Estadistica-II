@@ -63,6 +63,8 @@ ifelse(t(x02)%*%solve(t(X)%*%X)%*%x02 < max(Hat_values), "Pertence a la region d
 predict(modelo, newdata = data.frame(X1 = 45.03, 
                                      X2 = 80.88, 
                                      X3 = 60.33), interval = "prediction")
+# Ver resumen del modelo
+summary(modelo)
 # -----------------------------
 
 

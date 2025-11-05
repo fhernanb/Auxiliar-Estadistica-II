@@ -16,6 +16,10 @@ modelo2 <- lm(Calificacion ~ Estudio + Excelencia + Sueno, data = datos2)
 source("funciones.R") # Funciones del curso
 # Librerías
 library(leaps); library(olsrr); library(perturb) # IMPORTANTE
+# Utilizando myallregtable
+myAllRegTable(modelo)
+
+
 # ---------------------
 myBackward(datos2[, -5])
 myAnova(modelo2)
